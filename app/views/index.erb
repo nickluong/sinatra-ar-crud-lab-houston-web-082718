@@ -1,0 +1,10 @@
+<h1> Home Page </h1>
+
+<% @posts.all.each do |post| %>
+<div>
+ <h2><%= post.name %> </h2>
+ <p><%= post.content %></p>
+</div>
+<% end %>
+
+<a href = "/posts/new">Create New Post</a>
